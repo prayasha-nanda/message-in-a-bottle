@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.7",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.7"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "vite": "^6.3.5"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\" \"npm run tailwind-watch\"",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend && npm run dev",
+    "tailwind-watch": "cd frontend && npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  }
+}
