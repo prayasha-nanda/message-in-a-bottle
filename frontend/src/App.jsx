@@ -35,7 +35,7 @@ function App() {
       {appMode === 'receive' && (
         <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-xl backdrop-blur-sm bg-opacity-80">
           <h1 className="text-3xl font-bold text-center text-blue-800 mb-6">Is it a Siren speaking or a Mermaid?</h1>
-          <h2 className="text-xl font-bold text-center text-blue-500 mb-6">Could be a human too!</h2>
+          <h2 className="text-xl font-bold text-center text-blue-500 mb-6">Or maybe just someone with Wi-Fi!</h2>
           <Messages />
           <button
             onClick={() => setAppMode('landing')}
