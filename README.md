@@ -66,6 +66,3 @@ This will launch **both frontend and backend** together using concurrently!
 
 * Encoding issues (like `â€™` showing up instead of `'`) can happen if your text isn’t inserted in UTF-8. Make sure to insert messages with UTF-8 encoding.
 * Tags (`quote`, `song`, `rambling`) are validated at insertion time.
----
-
-👉 Do you want me to also add **step-by-step commands to recreate the database and run the scripts** so that someone new can follow without context?
